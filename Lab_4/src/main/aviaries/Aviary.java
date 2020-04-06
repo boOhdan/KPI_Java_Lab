@@ -1,10 +1,12 @@
 package main.aviaries;
 
+import main.animals.Animal;
+
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
-public class Aviary<T> {
+public class Aviary<T extends Animal> {
     int seats;
 
     List<T> animals =new ArrayList<>();
